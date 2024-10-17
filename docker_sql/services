@@ -2,17 +2,17 @@ docker run -it \
   -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
   -e POSTGRES_DB="ny_taxi" \
-  -v /workspaces/Data_Engineering_codespaces/docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data \
+  -v c:/Users/DELL/Desktop/data_engineering_zoomcap/week_1/docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data \
   -p 5432:5432 \
   postgres:13
 
-if the port is busy, check using
+# if the port is busy, check using
 
 docker ps
 
 docker stop <container_id_or_name>
 
-if it doesn't stop after 1 minute, use
+# if it doesn't stop after 1 minute, use
 
 docker kill <container_id_or_name>
 
